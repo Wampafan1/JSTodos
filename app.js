@@ -49,6 +49,7 @@ form.addEventListener('submit', function(e){
         todos.push(todoText);
         localStorage.setItem('todos', JSON.stringify(todos));
         renderTodos();
+        input.value = '';
     }
     
 })
